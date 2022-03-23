@@ -1,0 +1,299 @@
+*{
+   
+}
+
+#content-container h1,
+#content-container h2,
+#content-container h3,
+#content-container h4,
+#content-container h5,
+#content-container p{
+  margin:0px;
+    padding:0px;
+}
+
+body{
+  display: grid;
+  margin:0px;
+  grid-template-columns:1fr 4fr;
+  height:100vh;
+  width:100vw;
+  background-color:#e1e8f0;
+}
+
+
+#sidebar{
+  margin:0;
+  background-color:#1c93d2;
+  display:flex;
+  flex-direction:column;
+  grid-gap:25px;
+  float:left;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  float:left;
+    padding:10px;
+  color:#fff;
+}
+
+#sidebar ul li *{
+  float:left;
+  color:#fff;
+}
+
+
+#sidebar ul li a:hover{
+  border-left: 2px solid #fff;
+}
+
+#sidebar ul li a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  grid-gap:10px;
+  margin:auto;
+  text-decoration: none;
+  color: #000;
+}
+
+#content-container{
+  display:grid;
+  grid-template-rows:1fr 5fr;
+  margin:0;
+}
+
+#header{
+  background-color:white;
+  align-items:center;
+  padding:10px;
+  box-shadow: 0px 5px 10px 0px grey;
+  margin:0px;
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:1fr 2fr;\
+}
+
+#upper-header{
+  display:grid;
+  grid-template-areas:
+    'search display';
+  grid-gap:20px;
+  align-items: center;
+}
+
+img{
+  border-radius: 50px;
+}
+
+
+#search{
+  grid-area:search;
+  display:flex;
+  align-items: center;
+  grid-gap:20px;
+  padding:6px;
+  margin:auto;
+}
+
+#upper-header #search input{
+  width:700px;
+  height:30px;
+  border-radius: 20px;
+  background-color:#e1e8f0;
+  border: 1px solid #e1e8f0;
+}
+
+#display{
+  grid-area: display;
+  display:flex;
+  align-items: center;
+  grid-gap:45px;
+}
+
+
+
+#lower-header{
+  display:grid;
+  grid-template-areas:
+    'account actions';
+  grid-gap:20px;
+  align-items: center;
+}
+
+#account{
+  display:flex;
+  padding:0px 45px;
+  grid-gap:20px;
+}
+
+#account-info{
+  display:grid;
+}
+
+#actions{
+  display: flex;
+  justify-content:center;
+  grid-gap:20px;
+}
+
+button{
+  background-color:#1c93d2;
+  border-radius:30px;
+  width:150px;
+  height:40px;
+  color:#fff;
+  font-weight:800px;
+  border:#1c93d2 solid 1px;
+}
+
+button:hover{
+  color:#1c93d2;
+  background-color:#fff;
+  border:#1c93d2 solid 2px;
+}
+
+
+#main-content{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  margin:20px;
+}
+
+#projects{
+  margin:10px;
+  padding:10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#section-title{
+  background-color:#e1e8f0;
+  padding:10px;
+  
+}
+
+#cards{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+#project-card{
+  border-left: 6px solid #edb336;
+  border-radius:5px;
+  background-color:white;
+  padding:8%;
+  box-shadow: 0px 5px 10px 0px grey;
+}
+
+#card-title{
+}
+
+#cards ul{
+  float:right;
+  display:flex;
+  padding:20px;
+  margin:auto;
+  list-style-type: none;
+}
+
+svg{
+  display:inline;
+  cursor:point;
+}
+
+#non-projects{
+  display:flex;
+  flex-direction:column;
+  margin:10px;
+  padding:10px;
+  grid-gap:15px;
+}
+
+
+#announcements{
+  float:left;
+  justify-content:center;
+  align-items:left;
+  padding-bottom:10px;
+}
+
+#announcements-list{
+  display: block;
+  display:grid;
+   grid-template-rows: 1fr 1fr 1fr;
+  justify-content:center;
+  align-items:center;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px grey;
+  border-left: 8px solid #c3a2a5;
+}
+
+#announcements-list div{
+  display:flex;
+  flex-direction:column;
+  grid-gap:0px;
+   border-bottom: 1px solid #e1e8f0;
+  position:relative;
+  padding:20px;
+  margin:auto; /* This will center the border. */
+  width: 80%;
+}
+
+#announcements-list div p {
+    margin:0px;
+    padding:0px;
+}
+
+#announcements-list div h5{
+    margin:0px;
+    padding:0px;
+    font-size:20px;
+}
+
+#trends{
+  float:left;
+  justify-content:center;
+  align-items:left;
+}
+
+#trends-list{
+    display: block;
+  display:grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding:7px;
+  justify-content:center;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px 0px grey;
+   border-left: 8px solid #b4c3ca;
+}
+
+#trend-item{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap:15px;
+  padding:9px;
+}
+
+#trend-item img{
+  border-radius: 50px;
+}
+
+#trend-item p {
+    margin:0px;
+    padding:0px;
+}
+
+#trend-item h5{
+    margin:0px;
+    padding:0px;
+    font-size:20px;
+}
